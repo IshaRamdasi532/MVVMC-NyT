@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsOptionsCollectionViewCell" id="gTV-IL-0wX" customClass="NewsOptionsCollectionViewCell" customModule="NyNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Wmy-V3-R1m">
+                        <rect key="frame" x="1" y="1" width="194" height="49"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                        <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wmy-V3-R1m" secondAttribute="trailing" id="Oau-cE-ufC"/>
+                <constraint firstItem="Wmy-V3-R1m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="b5h-xs-ILS"/>
+                <constraint firstAttribute="bottom" secondItem="Wmy-V3-R1m" secondAttribute="bottom" constant="1" id="jlC-sH-TM4"/>
+                <constraint firstItem="Wmy-V3-R1m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="xoJ-kj-A1g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="195" height="51"/>
+            <connections>
+                <outlet property="titleLbl" destination="Wmy-V3-R1m" id="vsj-xG-X0H"/>
+            </connections>
+            <point key="canvasLocation" x="150" y="80.022321428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>
